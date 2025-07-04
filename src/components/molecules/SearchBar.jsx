@@ -17,7 +17,7 @@ const SearchBar = ({ onSearch, placeholder = "Search services...", className = '
     setSearchTerm(e.target.value);
   };
 
-  return (
+return (
     <form onSubmit={handleSubmit} className={`relative ${className}`}>
       <div className="flex items-center gap-2">
         <div className="flex-1 relative">
@@ -26,9 +26,7 @@ const SearchBar = ({ onSearch, placeholder = "Search services...", className = '
             placeholder={placeholder}
             value={searchTerm}
             onChange={handleInputChange}
-            icon="Search"
-            iconPosition="left"
-            className="search-bar pr-12"
+            className="search-bar"
           />
         </div>
         <Button
