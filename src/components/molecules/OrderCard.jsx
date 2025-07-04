@@ -1,14 +1,22 @@
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import ApperIcon from '@/components/ApperIcon';
-import Avatar from '@/components/atoms/Avatar';
-import Badge from '@/components/atoms/Badge';
-import Button from '@/components/atoms/Button';
-import { format } from 'date-fns';
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import React from "react";
+import ApperIcon from "@/components/ApperIcon";
+import Badge from "@/components/atoms/Badge";
+import Avatar from "@/components/atoms/Avatar";
+import Button from "@/components/atoms/Button";
+import Messages from "@/components/pages/Messages";
 
 const OrderCard = ({ order, className = '' }) => {
   const navigate = useNavigate();
 
+  // Early return if order is not provided
+  if (!order) {
+    return null;
+  }
+
+  // Helper function to get status variant for Badge component
   const getStatusVariant = (status) => {
     const variants = {
       pending: 'warning',
@@ -17,7 +25,7 @@ const OrderCard = ({ order, className = '' }) => {
       completed: 'success',
       disputed: 'error'
     };
-    return variants[status] || 'default';
+    return variants[status] || 'secondary';
   };
 
   const getStatusIcon = (status) => {
@@ -31,48 +39,64 @@ const OrderCard = ({ order, className = '' }) => {
     return icons[status] || 'Circle';
   };
 
+  // Helper function to format price
   const formatPrice = (price) => {
+    if (typeof price !== 'number') return '$0';
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD'
     }).format(price);
   };
 
+  // Helper function to format date
   const formatDate = (date) => {
-    return format(new Date(date), 'MMM dd, yyyy');
+    if (!date) return 'No date';
+    try {
+      return format(new Date(date), 'MMM dd, yyyy');
+    } catch (error) {
+      return 'Invalid date';
+    }
   };
 
+  // Navigation handlers
   const handleViewService = () => {
-    navigate(`/service/${order.serviceId}`);
+    if (order.serviceId) {
+      navigate(`/services/${order.serviceId}`);
+    }
   };
 
   const handleViewMessages = () => {
-    navigate(`/messages?user=${order.sellerId}`);
+    if (order.sellerId) {
+      navigate(`/messages?user=${order.sellerId}`);
+    }
   };
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`bg-white rounded-card p-6 shadow-soft hover:shadow-soft-lg transition-all duration-200 ${className}`}
+      exit={{ opacity: 0, y: -20 }}
+      className={`bg-white rounded-card border border-gray-200 p-6 hover:shadow-soft-lg transition-shadow duration-300 ${className}`}
     >
-      <div className="flex items-start justify-between mb-4">
+      {/* Header with status badge */}
+      <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
-          <Avatar 
-            src={order.seller?.avatar} 
-            name={order.seller?.name}
-            size="md"
-          />
+          {order.seller?.avatar && (
+            <Avatar 
+              src={order.seller.avatar} 
+              alt={order.seller?.name || 'Seller'} 
+              size="sm" 
+            />
+          )}
           <div>
-            <h3 className="font-semibold text-gray-800">
-              {order.service?.title}
+            <h3 className="font-medium text-gray-900">
+              {order.service?.title || 'Service Title'}
             </h3>
-            <p className="text-sm text-gray-600">
-              with {order.seller?.name}
+            <p className="text-sm text-gray-500">
+              by {order.seller?.name || 'Unknown Seller'}
             </p>
           </div>
         </div>
-        
         <Badge 
           variant={getStatusVariant(order.status)}
           className="flex items-center gap-1"
@@ -81,60 +105,57 @@ const OrderCard = ({ order, className = '' }) => {
           {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
         </Badge>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-        <div>
-          <p className="text-sm text-gray-500 mb-1">Order Date</p>
-          <p className="font-medium text-gray-800">
-            {formatDate(order.createdAt)}
-          </p>
+
+      {/* Order details */}
+      <div className="space-y-2 mb-4">
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Package:</span>
+          <span className="text-sm font-medium text-gray-900">
+            {order.package || 'Standard'}
+          </span>
         </div>
-        
-        <div>
-          <p className="text-sm text-gray-500 mb-1">Delivery Date</p>
-          <p className="font-medium text-gray-800">
-            {formatDate(order.deliveryDate)}
-          </p>
-        </div>
-        
-        <div>
-          <p className="text-sm text-gray-500 mb-1">Total Amount</p>
-          <p className="font-bold text-lg text-primary">
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Price:</span>
+          <span className="text-sm font-medium text-gray-900">
             {formatPrice(order.price)}
-          </p>
+          </span>
         </div>
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Order Date:</span>
+          <span className="text-sm font-medium text-gray-900">
+            {formatDate(order.createdAt)}
+          </span>
+        </div>
+        {order.deliveryDate && (
+          <div className="flex justify-between items-center">
+            <span className="text-sm text-gray-600">Delivery Date:</span>
+            <span className="text-sm font-medium text-gray-900">
+              {formatDate(order.deliveryDate)}
+            </span>
+          </div>
+        )}
       </div>
-      
-      <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-        <Button 
-          variant="outline" 
+
+      {/* Action buttons */}
+      <div className="flex gap-2">
+        <Button
+          variant="outline"
           size="sm"
           onClick={handleViewService}
           className="flex-1"
         >
+          <ApperIcon name="Eye" size={16} />
           View Service
         </Button>
-        
-        <Button 
-          variant="primary" 
+        <Button
+          variant="outline"
           size="sm"
-          icon="MessageCircle"
           onClick={handleViewMessages}
           className="flex-1"
         >
-          Message
+          <ApperIcon name="MessageCircle" size={16} />
+          Messages
         </Button>
-        
-        {order.status === 'delivered' && (
-          <Button 
-            variant="secondary" 
-            size="sm"
-            icon="Star"
-            className="flex-1"
-          >
-            Review
-          </Button>
-        )}
       </div>
     </motion.div>
   );
