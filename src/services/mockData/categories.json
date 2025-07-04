@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "name": "Design",
+    "description": "Graphic design, logos, branding, and visual content",
+    "icon": "Palette",
+    "serviceCount": 1250,
+    "startingPrice": 25
+  },
+  {
+    "Id": 2,
+    "name": "Writing",
+    "description": "Content writing, copywriting, and editing services",
+    "icon": "PenTool",
+    "serviceCount": 890,
+    "startingPrice": 15
+  },
+  {
+    "Id": 3,
+    "name": "Programming",
+    "description": "Web development, mobile apps, and software solutions",
+    "icon": "Code",
+    "serviceCount": 675,
+    "startingPrice": 50
+  },
+  {
+    "Id": 4,
+    "name": "Marketing",
+    "description": "Digital marketing, SEO, and social media management",
+    "icon": "TrendingUp",
+    "serviceCount": 543,
+    "startingPrice": 35
+  },
+  {
+    "Id": 5,
+    "name": "Video",
+    "description": "Video editing, animation, and motion graphics",
+    "icon": "Video",
+    "serviceCount": 432,
+    "startingPrice": 40
+  },
+  {
+    "Id": 6,
+    "name": "Music",
+    "description": "Music production, composition, and audio editing",
+    "icon": "Music",
+    "serviceCount": 321,
+    "startingPrice": 30
+  }
+]

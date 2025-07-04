@@ -1,0 +1,236 @@
+[
+  {
+    "Id": 1,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "Hi Sarah! I'm interested in your blog writing service. Can you help me with content for my tech blog?",
+    "timestamp": "2024-01-15T10:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 2,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "Hello John! Absolutely, I'd be happy to help with your tech blog. What topics are you looking to cover?",
+    "timestamp": "2024-01-15T10:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 2,
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 3,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "I need articles about React, Node.js, and web development best practices. Around 1000 words each.",
+    "timestamp": "2024-01-15T11:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 4,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "Perfect! I have extensive experience writing about web development. I can deliver high-quality, SEO-optimized content. Would you like to go with the Standard package?",
+    "timestamp": "2024-01-15T11:15:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 2,
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 5,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "Yes, the Standard package looks great. Let's proceed with that.",
+    "timestamp": "2024-01-15T11:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 6,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "Excellent! I'll start working on your articles right away. I'll have the first draft ready by tomorrow.",
+    "timestamp": "2024-01-15T12:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 2,
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 7,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "Hi John! I've completed the first article about React best practices. Please review it and let me know if you need any revisions.",
+    "timestamp": "2024-01-17T14:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 2,
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 8,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "Thank you for the great work on the blog post!",
+    "timestamp": "2024-01-18T14:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 9,
+    "conversationId": 2,
+    "senderId": 1,
+    "content": "Hi Mike! I need a modern website for my business. Can you help?",
+    "timestamp": "2024-01-16T09:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 10,
+    "conversationId": 2,
+    "senderId": 3,
+    "content": "Absolutely! I specialize in React development. What kind of website are you looking for?",
+    "timestamp": "2024-01-16T09:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 3,
+      "name": "Mike Chen",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 11,
+    "conversationId": 2,
+    "senderId": 1,
+    "content": "I need a portfolio website with a blog section and contact form. Something clean and professional.",
+    "timestamp": "2024-01-16T10:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 12,
+    "conversationId": 2,
+    "senderId": 3,
+    "content": "The website is ready for review. Please check the staging link.",
+    "timestamp": "2024-01-17T16:20:00.000Z",
+    "read": false,
+    "sender": {
+      "Id": 3,
+      "name": "Mike Chen",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 13,
+    "conversationId": 3,
+    "senderId": 1,
+    "content": "Hi David! I have some video footage that needs professional editing. Are you available?",
+    "timestamp": "2024-01-17T08:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 14,
+    "conversationId": 3,
+    "senderId": 5,
+    "content": "Hello! Yes, I'm available for video editing projects. What type of footage do you have?",
+    "timestamp": "2024-01-17T08:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 5,
+      "name": "David Rodriguez",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 15,
+    "conversationId": 3,
+    "senderId": 5,
+    "content": "I can start working on your video project tomorrow. Do you have all the raw footage ready?",
+    "timestamp": "2024-01-18T11:45:00.000Z",
+    "read": false,
+    "sender": {
+      "Id": 5,
+      "name": "David Rodriguez",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 16,
+    "conversationId": 4,
+    "senderId": 1,
+    "content": "Hi Lisa! I need background music for my video project. Can you help?",
+    "timestamp": "2024-01-16T15:00:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 17,
+    "conversationId": 4,
+    "senderId": 6,
+    "content": "Hello! I'd be happy to create background music for your video. What style are you looking for?",
+    "timestamp": "2024-01-16T15:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 6,
+      "name": "Lisa Park",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    }
+  },
+  {
+    "Id": 18,
+    "conversationId": 4,
+    "senderId": 6,
+    "content": "Here's the first draft of your background music. Let me know what you think!",
+    "timestamp": "2024-01-16T19:30:00.000Z",
+    "read": true,
+    "sender": {
+      "Id": 6,
+      "name": "Lisa Park",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    }
+  }
+]

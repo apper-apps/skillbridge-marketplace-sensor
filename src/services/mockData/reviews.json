@@ -1,0 +1,152 @@
+[
+  {
+    "Id": 1,
+    "serviceId": 1,
+    "orderId": 1,
+    "rating": 5,
+    "comment": "Amazing logo design! John exceeded my expectations with his creativity and professionalism. The logo perfectly captures our brand essence.",
+    "reviewerId": 4,
+    "createdAt": "2024-01-12T14:30:00.000Z",
+    "reviewer": {
+      "Id": 4,
+      "name": "Emma Wilson",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "country": "Canada"
+    }
+  },
+  {
+    "Id": 2,
+    "serviceId": 1,
+    "orderId": 2,
+    "rating": 5,
+    "comment": "Outstanding work! The logo design process was smooth and John was very responsive to feedback. Highly recommend!",
+    "reviewerId": 5,
+    "createdAt": "2024-01-08T10:15:00.000Z",
+    "reviewer": {
+      "Id": 5,
+      "name": "Robert Smith",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "country": "USA"
+    }
+  },
+  {
+    "Id": 3,
+    "serviceId": 2,
+    "orderId": 3,
+    "rating": 4,
+    "comment": "Great content writing! Sarah delivered well-researched articles that were exactly what I needed for my blog.",
+    "reviewerId": 1,
+    "createdAt": "2024-01-15T16:45:00.000Z",
+    "reviewer": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "country": "USA"
+    }
+  },
+  {
+    "Id": 4,
+    "serviceId": 2,
+    "orderId": 4,
+    "rating": 5,
+    "comment": "Excellent writing quality! The articles were SEO-optimized and helped increase my website traffic significantly.",
+    "reviewerId": 3,
+    "createdAt": "2024-01-10T09:20:00.000Z",
+    "reviewer": {
+      "Id": 3,
+      "name": "Mike Chen",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "country": "USA"
+    }
+  },
+  {
+    "Id": 5,
+    "serviceId": 3,
+    "orderId": 5,
+    "rating": 5,
+    "comment": "Mike built an incredible website for our business! The React development was top-notch and the site is lightning fast.",
+    "reviewerId": 4,
+    "createdAt": "2024-01-05T13:30:00.000Z",
+    "reviewer": {
+      "Id": 4,
+      "name": "Emma Wilson",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "country": "Canada"
+    }
+  },
+  {
+    "Id": 6,
+    "serviceId": 4,
+    "orderId": 6,
+    "rating": 5,
+    "comment": "David's video editing skills are phenomenal! The color grading and transitions made our corporate video look professional.",
+    "reviewerId": 2,
+    "createdAt": "2024-01-18T11:00:00.000Z",
+    "reviewer": {
+      "Id": 2,
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=150&h=150&fit=crop&crop=face",
+      "country": "UK"
+    }
+  },
+  {
+    "Id": 7,
+    "serviceId": 5,
+    "orderId": 7,
+    "rating": 4,
+    "comment": "Beautiful music composition! Lisa created the perfect background track for our project. Very talented musician.",
+    "reviewerId": 1,
+    "createdAt": "2024-01-14T15:45:00.000Z",
+    "reviewer": {
+      "Id": 1,
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "country": "USA"
+    }
+  },
+  {
+    "Id": 8,
+    "serviceId": 1,
+    "orderId": 8,
+    "rating": 5,
+    "comment": "John's attention to detail is incredible. The brand identity package was comprehensive and beautifully executed.",
+    "reviewerId": 6,
+    "createdAt": "2024-01-11T12:20:00.000Z",
+    "reviewer": {
+      "Id": 6,
+      "name": "Lisa Park",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
+      "country": "South Korea"
+    }
+  },
+  {
+    "Id": 9,
+    "serviceId": 2,
+    "orderId": 9,
+    "rating": 4,
+    "comment": "Good communication and quality content. Sarah understood our requirements perfectly and delivered on time.",
+    "reviewerId": 5,
+    "createdAt": "2024-01-07T08:30:00.000Z",
+    "reviewer": {
+      "Id": 5,
+      "name": "Robert Smith",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "country": "USA"
+    }
+  },
+  {
+    "Id": 10,
+    "serviceId": 3,
+    "orderId": 10,
+    "rating": 5,
+    "comment": "Exceptional web development service! Mike delivered a modern, responsive website that exceeded our expectations.",
+    "reviewerId": 6,
+    "createdAt": "2024-01-16T14:15:00.000Z",
+    "reviewer": {
+      "Id": 6,
+      "name": "Lisa Park",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
+      "country": "South Korea"
+    }
+  }
+]
